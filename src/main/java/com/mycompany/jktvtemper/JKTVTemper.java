@@ -1,9 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.jktvtemper;
+
+import java.util.Scanner;
 
 /**
  *
@@ -12,6 +9,13 @@ package com.mycompany.jktvtemper;
 public class JKTVTemper {
 
     public static void main(String[] args) {
+        Scanner Scanner= new Scanner(System.in);
+        System.out.println("Это конвертор температуры с Цельсий в Форенгейты.");
+        System.out. print("Набери температуру в Цельсиях:");
         
+        double cels = Scanner.nextDouble();
+        /*Соотношение ((9*Цельс +(32*5))/5)*/
+        double faren = ((9 * cels + (32*5)) / 5);
+        System.out.println(cels + " Это в цельсиях. "+ "Получается что в форенгентах = " + faren);
     }
 }
